@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportation Services Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            </div>
+            <div class="scroll-image">
+              <img src="truck1.png" alt="Truck">
+            </div>
+          </div>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to Our Transportation Services Company</h1>
+            <p>We provide reliable and efficient transportation services to individuals and businesses.</p>
+            
+        </section>
+        <div class="scroll-container">
+            <div class="scroll-content">
+              <!-- Your content here -->
+           
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>A quick, safe and simple way to book truck.</li>
+                <li>Live location tracking facility</li>
+                <li>Skilled and dedicated personnel</li>
+                <li>Comprehensive, advanced and economical moving solution</li>
+                <li>Customized and modern transportation of goods</li>
+                <li>24/7 helpline desk</li>
+            </ul>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a team of experienced professionals dedicated to providing exceptional transportation services.
+                New dynamically developing company on the market of transportation services, with a focus on transportation of agricultural commodities, fertilizers, seeds and liquid commodities.
+            </p>
+        </section>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Contact us to learn more about our services and to request a quote.</p>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button>Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Transportation Services Company</p>
+    </footer>
+    <script>const scrollContainer = document.querySelector('.scroll-container');
+        const scrollImage = document.querySelector('.scroll-image');
+        
+        const handleScroll = () => {
+          const scrollPosition = scrollContainer.scrollTop;
+          const containerHeight = scrollContainer.offsetHeight;
+          const imageHeight = scrollImage.offsetHeight;
+        
+          if (scrollPosition > containerHeight - imageHeight) {
+            scrollImage.style.height = `${imageHeight}px`;
+          } else {
+            scrollImage.style.height = `0px`;
+          }
+        };
+        
+        scrollContainer.addEventListener('scroll', handleScroll);</script>
+</body>
+</html>
